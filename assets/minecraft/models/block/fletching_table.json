@@ -1,12 +1,30 @@
 {
-  "parent": "minecraft:block/cube",
-  "textures": {
-    "down": "minecraft:block/birch_planks",
-    "east": "minecraft:block/fletching_table_side",
-    "north": "minecraft:block/fletching_table_front",
-    "particle": "minecraft:block/fletching_table_front",
-    "south": "minecraft:block/fletching_table_front",
-    "up": "minecraft:block/fletching_table_top",
-    "west": "minecraft:block/fletching_table_side"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"up": "block/fletching_table_top",
+		"down": "block/birch_planks",
+		"particle": "block/fletching_table_front",
+		"south": "block/fletching_table_front",
+		"west": "block/fletching_table_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#west"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#south"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#west"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#south"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#down"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.75, 0]
+		}
+	}
 }

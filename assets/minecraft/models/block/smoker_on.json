@@ -1,9 +1,76 @@
 {
-  "parent": "minecraft:block/orientable_with_bottom",
-  "textures": {
-    "bottom": "minecraft:block/smoker_bottom",
-    "front": "minecraft:block/smoker_front_on",
-    "side": "minecraft:block/smoker_side",
-    "top": "minecraft:block/smoker_top"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/orientable_with_bottom",
+	"textures": {
+		"4": "block/smoker_cimney",
+		"5": "block/somker_cimney_top",
+		"bottom": "block/smoker_bottom",
+		"side": "block/smoker_side",
+		"top": "block/smoker_top",
+		"particle": "block/smoker_cimney",
+		"front": "block/smoker_front_on"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [-2, 12, 8],
+			"to": [0, 23, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 14, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 11], "texture": "#4"},
+				"east": {"uv": [0, 0, 3, 11], "texture": "#4"},
+				"south": {"uv": [0, 0, 2, 11], "texture": "#4"},
+				"west": {"uv": [0, 0, 3, 11], "texture": "#4"},
+				"up": {"uv": [0, 0, 2, 3], "texture": "#4"},
+				"down": {"uv": [0, 0, 2, 3], "texture": "#4"}
+			}
+		},
+		{
+			"from": [-2, 24, 8],
+			"to": [0, 25, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 24, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 1], "texture": "#5"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#5"},
+				"south": {"uv": [0, 0, 2, 1], "texture": "#5"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#5"},
+				"up": {"uv": [0, 0, 2, 3], "texture": "#5"},
+				"down": {"uv": [0, 0, 2, 3], "texture": "#5"}
+			}
+		},
+		{
+			"from": [-3, 23, 7],
+			"to": [1, 24, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 23, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 1], "texture": "#5"},
+				"east": {"uv": [0, 0, 5, 1], "texture": "#5"},
+				"south": {"uv": [0, 0, 4, 1], "texture": "#5"},
+				"west": {"uv": [0, 0, 5, 1], "texture": "#5"},
+				"up": {"uv": [0, 0, 4, 5], "texture": "#5"},
+				"down": {"uv": [0, 0, 4, 5], "texture": "#5"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		{
+			"name": "group",
+			"origin": [-2, 24, 9],
+			"color": 0,
+			"children": [2, 3]
+		}
+	]
 }
